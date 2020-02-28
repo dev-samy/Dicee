@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nQJ-BF-zjb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Real_Dicee" customModuleProvider="target" sceneMemberID="viewController">
+                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </arscnView>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="230"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="6qt-KU-cy2">
+            <objects>
+                <viewController id="uen-vE-wmq" customClass="ViewController3" customModule="Real_Dicee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qQn-23-sno"/>
+                        <viewControllerLayoutGuide type="bottom" id="obx-YK-Tjb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OKk-4I-aCF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="head" translatesAutoresizingMaskIntoConstraints="NO" id="eHn-10-cYt">
+                                <rect key="frame" x="87" y="415" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dv4-3I-DaK">
+                                <rect key="frame" x="141" y="614" width="132" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="242-2427132_png-transparent-stock-toss-heads-or-tails-vector"/>
+                                <connections>
+                                    <action selector="Roll:" destination="uen-vE-wmq" eventType="touchUpInside" id="WOm-5B-dOv"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwJ-3t-25C">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.01105758548" green="0.1969789267" blue="0.30981823800000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <items>
+                                    <navigationItem id="ZWm-Dm-j2g">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="JgQ-KB-RwI">
+                                            <color key="tintColor" red="0.075387485330000004" green="0.79980868100000002" blue="0.80000859499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="back:" destination="uen-vE-wmq" id="KGh-lc-INh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dicee12" translatesAutoresizingMaskIntoConstraints="NO" id="DGE-oh-Utm">
+                                <rect key="frame" x="54" y="121" width="307" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.010496145110000001" green="0.19724214079999999" blue="0.30197438599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="coin" destination="eHn-10-cYt" id="hgF-PR-1Ox"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUh-wW-ipQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618.84057971014499" y="-96.428571428571431"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="xe2-FD-ilp">
+            <objects>
+                <viewController id="yU6-ky-SAa" customClass="ViewController2" customModule="Real_Dicee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S5b-eO-dRB"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Lg-9e-HKB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pKx-Wq-xmx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dicee12" translatesAutoresizingMaskIntoConstraints="NO" id="RCl-By-VXW">
+                                <rect key="frame" x="58" y="123" width="299" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="qyn-lW-wtz">
+                                <rect key="frame" x="58" y="461" width="118" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="uwn-wU-OOM">
+                                <rect key="frame" x="247" y="461" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnH-xm-MIX">
+                                <rect key="frame" x="154" y="676" width="106" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="nn"/>
+                                <connections>
+                                    <action selector="Roll:" destination="yU6-ky-SAa" eventType="touchUpInside" id="sNh-9g-meG"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIc-ll-heC">
+                                <rect key="frame" x="0.0" y="8" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.0099517125639999992" green="0.19749704000000001" blue="0.29413053389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <items>
+                                    <navigationItem id="yFO-17-PPs">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="aU0-w6-ZRP">
+                                            <color key="tintColor" red="0.075387485330000004" green="0.79980868100000002" blue="0.80000859499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="back:" destination="yU6-ky-SAa" id="Snu-ep-CHg"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.010496145110000001" green="0.19724214079999999" blue="0.30197438599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="Dices1" destination="uwn-wU-OOM" id="PPO-0r-GW1"/>
+                        <outlet property="Dices2" destination="qyn-lW-wtz" id="HY3-yL-7cr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Bu-ZF-SGk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618.84057971014499" y="634.82142857142856"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="cDH-89-2vH">
+            <objects>
+                <viewController id="nQJ-BF-zjb" customClass="MainViewController" customModule="Real_Dicee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YVe-FB-z2V"/>
+                        <viewControllerLayoutGuide type="bottom" id="QQ3-9d-AoU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nAe-oo-0zG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dicee12" translatesAutoresizingMaskIntoConstraints="NO" id="6UC-PM-oyH">
+                                <rect key="frame" x="25" y="116" width="365" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ny3-x3-37H">
+                                <rect key="frame" x="96" y="468" width="223" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.105887495" green="0.99976390599999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Dicee">
+                                    <color key="titleColor" red="0.0099517125639999992" green="0.19749704000000001" blue="0.29413053389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yU6-ky-SAa" kind="showDetail" id="HPO-Jp-4th"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9z-cU-q4j">
+                                <rect key="frame" x="231" y="561" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.105887495" green="0.99976390599999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Dicee">
+                                    <color key="titleColor" red="0.0099517125639999992" green="0.19749704000000001" blue="0.29413053389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="button1:" destination="nQJ-BF-zjb" eventType="touchUpInside" id="7mI-m5-n6x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-oX-aTk">
+                                <rect key="frame" x="96" y="538" width="223" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.105887495" green="0.99976390599999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Dicee AR">
+                                    <color key="titleColor" red="0.0099517125639999992" green="0.19749704000000001" blue="0.29413053389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="showDetail" id="PeD-i3-MpC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-Qr-CNI">
+                                <rect key="frame" x="96" y="610" width="223" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.105887495" green="0.99976390599999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Head or tail">
+                                    <color key="titleColor" red="0.0099517125639999992" green="0.19749704000000001" blue="0.29413053389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uen-vE-wmq" kind="showDetail" id="gwJ-CQ-Hd2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0099517125639999992" green="0.19749704000000001" blue="0.29413053389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="dicee" destination="ny3-x3-37H" id="FsY-ZS-GeA"/>
+                        <outlet property="diceeAR" destination="5dU-oX-aTk" id="Eqk-K8-nb7"/>
+                        <outlet property="headOR" destination="Hok-Qr-CNI" id="7tr-II-e6h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eho-2j-6Yt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-393" y="230"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="94" height="95"/>
+        <image name="242-2427132_png-transparent-stock-toss-heads-or-tails-vector" width="493" height="697"/>
+        <image name="dicee12" width="1383" height="1154"/>
+        <image name="head" width="133" height="140"/>
+        <image name="nn" width="439" height="431"/>
+    </resources>
+</document>
